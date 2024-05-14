@@ -1,0 +1,132 @@
+body {
+  background-color: #141414;
+}
+
+.post__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  gap: 2rem;
+  background-color: #f4f4f4;
+  padding-top: 4rem;
+}
+
+.post__list--article {
+  display: grid;
+  max-width: 100%;
+  align-content: start;
+  position: relative;
+  border-radius: 4px 4px 0 0;
+}
+
+.post__list--article p {
+  margin: 0;
+}
+
+.post__list--article--img {
+  height: 160px;
+}
+
+.post__list--article--img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 6px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+}
+
+.post__list--article--content {
+  margin-top: 16px;
+}
+
+.article--content--title {
+  width: max-content;
+  font-size: 1.1rem;
+  margin: 20px 0;
+  text-decoration: none;
+}
+
+.article--content--title h3 {
+  margin: 0;
+  color: #383838;
+  font-weight: 800;
+  position: relative;
+  z-index: 2;
+}
+
+/* .article--content--title h3::before {
+  content: '';
+  background-color: blue;
+  width: 0;
+  height: 50%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+} */
+
+.article--content--title h3:hover {
+  color: #0007bc;
+}
+
+.article--content--title h3::selection {
+  background-color: #0007bc;
+  color: #f4f4f4;
+}
+
+.article--content--data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  gap: 4px;
+}
+
+.date {
+  font-size: 1rem;
+}
+
+.article--content--desc {
+  margin-bottom: calc(1rem + 12px);
+  font-size: .8rem;
+  color: #575757;
+  font-weight: 400;
+  line-height: 1rem;
+  margin-top: 8px;
+}
+
+.article--content--desc::selection {
+  background-color: #0007bc;
+  color: #f4f4f4;
+}
+
+.article--content--bottom {
+  display: flex;
+  position: absolute;
+  width: calc(100% - 1rem);
+  bottom: 4px;
+  color: #494949;
+  font-weight: 400;
+  font-size: .8rem;
+  gap: 6px;
+}
+
+.article--content--bottom p::selection {
+  background-color: #0007bc;
+  color: #f4f4f4;
+}
+
+.author {
+  display: flex;
+  cursor: pointer;
+}
+
+.author:hover {
+  text-decoration: underline solid 1px #494949;
+}

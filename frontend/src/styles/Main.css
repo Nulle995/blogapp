@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+body{
+  margin:0;
+  font-family: "Ubuntu Sans";
+}
+
+.content-grid {
+  --pading-inline: 2rem;
+  --content-max-width: 120ch;
+  --breakout-max-width: 150ch;
+
+  --breakout-size: calc((var(--breakout-max-width) - var(--content-max-width)) / 2);
+
+  display: grid;
+  grid-template-columns: 
+    [full-width-start] minmax(var(--pading-inline),1fr) [breakout-start] minmax(0, var(--breakout-size)) [content-start] min(100% - (var(--pading-inline) * 2), var(--content-max-width)) [content-end] minmax(0, var(--breakout-size)) [breakout-end] minmax(var(--pading-inline), 1fr) [full-width-end];
+}
+
+.content-grid > * {
+  grid-column: content;
+}
+
+.content-grid > .breakout {
+  grid-column: breakout;
+}
+
+.content-grid > .full-width {
+  grid-column: full-width;
+  background-color: #f4f4f4;
+
+}

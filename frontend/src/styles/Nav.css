@@ -1,0 +1,140 @@
+.header {
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url("https://i.pinimg.com/originals/0b/b8/00/0bb80038e2fa7ecb8fe33a837d67f0ad.jpg");
+  background-position: start;
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+nav h1 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f2f2f2;
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+.nav__auth {
+  display: flex;
+  gap: .5rem;
+}
+
+.nav__btn {
+  padding: 0.5rem .7rem .5rem .5rem;
+  border-radius: 8px;
+  font-size: .8rem;
+  border: none;
+  display: flex;
+  gap: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn__black {
+  background-color: #27262b;
+  box-shadow: 0px 0px 2px 0px rgba(255,255,255,.6);
+  color: #f4f4f4;
+}
+
+.btn__white {
+  background-color: #ffffff;
+  color: #555555;
+}
+
+.nav__profile {
+  position: relative;
+  color: #f2f2f2;
+  font-weight: 600;
+  cursor: pointer;
+}
+.nav__profile:hover .nav__profile--drop {
+  display: grid;
+  gap: 8px;
+}
+.nav__profile--drop {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #27262b;
+  padding: .5rem 1rem .5rem .2rem;
+  border-radius: 0 0 8px 8px;
+}
+
+.nav__profile--drop a {
+  display: block;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  gap: 4px;
+}
+
+.nav__profile--drop a:hover {
+  text-decoration: underline solid 1px #f2f2f2;
+}
+
+header {
+  margin: 0 auto 4rem auto;
+  text-align: center;
+  color: #fcfbfd;
+  display: grid;
+  gap: 1rem;
+}
+
+
+header h2 {
+  font-size: 2rem;
+}
+
+header p {
+  font-size: .9rem;
+  color: #d8d8d8;
+}
+
+.header__search {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  font-size: 1.4rem;
+  gap: 1rem;
+}
+
+.header__search__left {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 0px 0px 2px 0px rgba(255,255,255,.6);
+  background-color: #27262b;
+  padding: .4rem 0 .4rem .4rem;
+}
+
+.header__input {
+  font-size: .9rem;
+  border: 0;
+  width: 100%;
+  background-color: #27262b;
+  color: #fcfbfd;
+  margin-left: .2rem;
+}
+
+.header__search select {
+  border: 0;
+  background-color: #27262b;
+  border-radius: 4px;
+  font-size: .9rem;
+  box-shadow: 0px 0px 2px 0px rgba(255,255,255,.6);
+  color: #fcfbfd;
+}
